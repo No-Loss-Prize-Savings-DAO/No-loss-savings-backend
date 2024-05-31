@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract NFTContract is ERC721URIStorage, Ownable { // Inherit from ERC721URIStorage
     uint256 private _tokenIdCounter;
     address savingsContractAddress;
-    string _tokenURI = "ipfs://bafybeidpcq2sdlhc26axzaazrk5jnbxdxkqctu6oqu7t4wv2eknyaqtjua/0.png";
+    string _tokenURI = "https://aquamarine-famous-penguin-727.mypinata.cloud/ipfs/QmeeFQsJtzLtMBBNmcKhUmWdNr3ToEotdJmEs5YGpedYss";
 
     constructor() ERC721("DAO Membership NFT", "DAONFT") Ownable(msg.sender) {}
 
