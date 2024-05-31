@@ -160,19 +160,23 @@ contract PrizeDistribution is VRFV2WrapperConsumerBase, ConfirmedOwner {
 
         // Transfer shares to proposer, contract, and DAO members
         savingsContract.transferFund(proposer, proposerShare);
-        savingsContract.transferFund(savingsContractAddress, contractShare);
+        // The below caused the code to crash as the contract percentage is to remain in the contract not be sent
+        // savingsContract.transferFund(savingsContractAddress, contractShare);
         address[] memory daos = daoGovernance.getDAOAddresses();
         for (uint256 i = 0; i < daos.length; i++) {
+            require(daos[i] != address(0), "DAO address cannot be zero address");
             savingsContract.transferFund(daos[i], sharePerDAO);
         }
 
         // Transfer shares to current users
         for (uint256 i = 0; i < numberOfUsers.length; i++) {
+            require(numberOfUsers[i] != address(0), "User address cannot be zero address");
             savingsContract.transferFund(numberOfUsers[i], sharePerUser);
         }
 
         // Transfer shares to winners
         for (uint256 i = 0; i < fetchedWinners.length; i++) {
+            require(fetchedWinners[i] != address(0), "Winner address cannot be zero address");
             savingsContract.transferFund(fetchedWinners[i], individualWinnerShare);
         }
 
@@ -203,6 +207,7 @@ contract PrizeDistribution is VRFV2WrapperConsumerBase, ConfirmedOwner {
             uint256 winnerIndex = latestRandomWords[i] % totalSlots;
             // Ensure winnerIndex is within the bounds of the addressesBySlots array
             require(winnerIndex < addressesBySlots.length, "Index out of bounds");
+            require(addressesBySlots[winnerIndex] != address(0), "Selected winner is a zero address");
             selectedWinners[i] = addressesBySlots[winnerIndex];
         }
         winners = selectedWinners; // Store winners for distribution

@@ -1,11 +1,11 @@
 {
-  "SavingsContractModule#BLZ": "0x656700f9861F1c0Cef8AEFA25e56DE23de275470",
-  "SavingsContractModule#ComplianceDatabase": "0xd0C2f2D2cA1713dD06425A044c74Ca10345C0AA8",
-  "SavingsContractModule#NFTContract": "0x4d3AC650089d433D62a0D2008461565bC14cF3Ce",
-  "SavingsContractModule#SwapContract": "0x928EE44DFd1083Ef31b1e29cA5C646D319fd5cAA",
-  "SavingsContractModule#USDT": "0x913212B9114C219FeF7101A63f4bd186d267263d",
-  "SavingsContractModule#RegulatoryCompliance": "0x3d4497540De107Ef34ffb69D8fD50A300ea28169",
-  "SavingsContractModule#SavingsContract": "0x4803293652436587019a4102a57380389ADd3233",
-  "SavingsContractModule#DAOGovernance": "0xaD711D4c3Dc8D6838b6d9F2058BB7C1198eddB82",
-  "SavingsContractModule#PrizeDistribution": "0xCc4ad732dCa91571B0A6237c9E49dD02ca17182c"
+  "SavingsContractModule#BLZ": "0x65714d6cFd0b7A6F23144d6d121F56F5Ab12FF13",
+  "SavingsContractModule#ComplianceDatabase": "0x66Ae933f25e41E48bB0Cde4b626B2AD3296DB679",
+  "SavingsContractModule#NFTContract": "0xcEC49556A4231a5De31a0e35f8af795CEC884E86",
+  "SavingsContractModule#SwapContract": "0x2001BCBb3040B1B6FfC01237b657860fACB6AE36",
+  "SavingsContractModule#USDT": "0xb7b706392936ccC690fba7c6F16AeFbc7cCf97ca",
+  "SavingsContractModule#RegulatoryCompliance": "0x6bAbB9826f31B4531dDa77B35C5CF32122Ec072C",
+  "SavingsContractModule#SavingsContract": "0x802B107101374cFE4983934cf8dFe3693BD8a3a4",
+  "SavingsContractModule#DAOGovernance": "0x4242f72A33c152463bA14423785c11b2f3437f3a",
+  "SavingsContractModule#PrizeDistribution": "0x5ca3467A2E44f8Ebe42333623ba02787867a7a9d"
 }
